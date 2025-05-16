@@ -140,8 +140,6 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-DEFAULT_AUTHENTICATION_CLASSES = (TokenAuthentication,)
-
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
         "cinema.permissions.IsAdminOrIfAuthenticatedReadOnly",
